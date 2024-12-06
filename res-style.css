@@ -1,0 +1,437 @@
+        /* General Reset */
+        body,
+        h1,
+        h2,
+        h3,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(61, 59, 59));
+        }
+
+        header {
+            background-image: linear-gradient(to right, rgb(5, 5, 5), rgb(70, 70, 66));
+            color: rgb(255, 255, 255);
+            padding: 5px 0 ;
+            display: flex;
+            justify-content: space-around;
+           align-items: center;
+            
+        }
+
+        header  b{
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #dd9a0a;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #f4a261;
+        }
+
+
+
+        /* this is hero section     */
+        .hero {
+            background: url('pngegg.png') no-repeat top center/cover;
+        }
+
+        .hero {
+            position: relative;
+            
+            height: 430px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            /* Semi-transparent overlay */
+            z-index: 1;
+        }
+
+        .hero h2 {
+            position: relative;
+            z-index: 2;
+            /* Ensure the text appears above the overlay */
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+        .hero p{
+            position: relative;
+            z-index: 2;
+            /* Ensure the text appears above the overlay */
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+
+        .section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .menu,
+        .gallery,
+        .chef {
+            text-align: center;
+        }
+
+        .menu h2,
+        .gallery h2,
+        .chef h2 {
+            font-size: 2rem;
+            color: #ffffff;
+        }
+
+        .menu-items {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .menu-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 7px 7px 6px #444343;
+            transition: transform .2s;
+        }
+        .menu-item:hover{
+            box-shadow: 0px 0px 0px #4645450a;
+           transform: scale(1.05);
+        }
+
+        .menu-item img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .menu-item h3 {
+            margin: 15px 0 10px;
+            color: #000000;
+        }
+        .menu-items .menu-item button{
+            max-width: 100%;
+            padding: 5px 3%;
+            border-radius: 10px;
+            border: none;
+            font-weight: 400;
+            background-image: linear-gradient(to right, rgb(226, 149, 7), rgb(0, 255, 136));
+            cursor: pointer;
+        }
+        .menu-items .menu-item button:hover {
+            background-image: linear-gradient(to right, rgb(85, 240, 180), rgb(255, 123, 0));
+        }
+        .see-more button  {
+            max-width: 100%;
+            margin-top: 40px;
+            border: none;
+            padding: 7px 3%;
+            border-radius: 10px;
+            font-size: 1em;
+            font-weight: 700;
+            background-image: linear-gradient(to right, rgb(226, 149, 7), rgb(0, 255, 136));
+            cursor: pointer;
+        }
+
+        .see-more button:hover {
+            background-image:  linear-gradient(to right, rgb(85, 240, 180), rgb(255, 123, 0));
+        }
+
+        /* gallery images */
+        .gallery-images {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+
+        }
+
+        .gallery-images img {
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            transition: transform .2s;
+        }
+        .gallery-images img:hover {
+         
+            transform: scale(1.25); 
+          
+        }
+        /* this is review section */
+
+        .review-section h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-top: 50px ;
+            color: white;
+
+        }
+
+        .review-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+           
+        }
+
+        .review-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 250px;
+            text-align: center;
+            padding: 20px;
+            margin: 20px 0;
+        
+        transition: transform .2s;
+        }
+        .review-card:hover {
+         
+            transform: scale(1.05); 
+          
+        }
+
+        .review-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .review-card h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .review-card p {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .stars {
+            color: #FFD700;
+            font-size: 1.2em;
+        }
+        .chef  h2{
+            margin: 30px 0;
+        }
+        .chef .chef-info {
+            margin: auto;
+            max-width: 80%;
+            display: flex;
+            flex-direction: row;
+            text-align: left;
+            justify-content: space-around;
+            align-items: center;
+            
+            background: white;
+            padding: 5px 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            gap: 20px;
+        }
+
+        .chef .chef-info img {
+            border-radius: 50%;
+            height: 250px;
+            max-width: 250px;
+            object-fit: cover;
+        }
+
+        .chef .chef-info h3 {
+            color: #000000;
+
+        }
+
+ 
+
+        footer {
+
+            background: #030303;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+
+        }
+
+        footer h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+
+        }
+
+        .grids {
+
+            justify-content: center;
+            margin: 80px 0;
+
+            gap: 90px;
+            flex-wrap: wrap;
+            display: flex;
+
+        }
+
+        .grid-data {
+
+            max-width: 300px;
+            text-align: left;
+
+
+
+        }
+
+        .grid-data p {
+            font-size: 0.9em;
+            color: gray;
+
+        }
+
+
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+
+        }
+
+        .social-icons a {
+            color: gray;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #10fde5;
+        }
+        @media only screen and (max-width: 540px) {
+            header{
+                padding: 1px 0 ;
+            }
+            header h1 {
+                font-size: 1.75rem;
+                font-weight: 900;
+            }
+
+            nav ul {
+                gap: 7px;
+                
+            }
+            nav ul li a{
+                font-weight: 300;
+                font-size: 1em;
+            }
+            .chef .chef-info {
+                flex-direction: column;
+            }
+
+           
+            .review-card {
+                max-width: 250px;
+            }
+
+            .grids {
+
+                justify-content: center;
+                margin: 80px 0;
+                align-items: center;
+                gap: 50px;
+                flex-wrap: wrap;
+                display: flex;
+
+            }
+
+            .grid-data {
+
+                max-width: 800px;
+                text-align: left;
+
+            }
+            .hero h2 {
+                position: relative;
+                z-index: 2;
+                /* Ensure the text appears above the overlay */
+                font-size: 3rem;
+                margin-bottom: 2px;
+            }
+            .hero p{
+                position: relative;
+                z-index: 2;
+                /* Ensure the text appears above the overlay */
+                font-size: 1rem;
+                margin-bottom: 2px;
+            }
+           
+        }
+        @media only screen and (max-width:615px){
+            .hero h2 {
+                position: relative;
+                z-index: 2;
+                /* Ensure the text appears above the overlay */
+                font-size: 4rem;
+                margin-bottom: 2px;
+            }
+            .hero p{
+                position: relative;
+                z-index: 2;
+                /* Ensure the text appears above the overlay */
+                font-size: 1.5rem;
+                margin-bottom: 2px;
+            }
+            
+        }
