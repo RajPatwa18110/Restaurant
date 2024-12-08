@@ -410,7 +410,12 @@
             .chef .chef-info {
                 flex-direction: column;
             }
-
+            .chef .chef-info img {
+            border-radius: 50%;
+            height: 200px;
+            max-width: 200px;
+            object-fit: cover;
+            }
            
             .review-card {
                 max-width: 250px;
@@ -489,10 +494,10 @@
             max-width: 100%;
             margin-top: 40px;
             border: none;
-            padding: 8px 20%;
-            border-radius: 10px;
-            font-size: 1.5em;
-            font-weight: 700;
+            padding: 7px 18%;
+            border-radius: 15px;
+            font-size: 1.3em;
+            font-weight: 600;
             background-image: linear-gradient(to right, rgb(226, 149, 7), rgb(0, 255, 136));
             cursor: pointer;
         }
