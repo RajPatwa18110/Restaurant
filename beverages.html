@@ -52,7 +52,19 @@
                     alt="Dish 1">
                 <h3>Chowemein</h3>
                 <p>Rs.120/-</p>
-                <a href="#"><button>Order now!</button></a>
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="33f28a60-fd13-4374-a98f-d3ac76eb5264">
+    <!-- Honeypot Spam Protection -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    <!-- Custom Confirmation / Success Page -->
+    <input type="hidden" name="redirect" value="menu-selection.html">
+    <input type="number" id="item1" name="Chowemein" min="0" value="0" required><br><br>
+
+                
+               <button type="submit">Order Now!</button>
+                    </form>
             </div>
             <div class="menu-item">
                 <img src="https://img.freepik.com/premium-photo/vegetarian-chow-mein-vegetarian-hakka-noodles-schezwan-noodles-black-bowl-against-dark-background-with-udon-noodles-veggies-chili-sauce-schezwan-noodles-is-spicy-dish-from-indo-c_872147-12039.jpg"
