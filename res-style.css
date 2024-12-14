@@ -1,4 +1,4 @@
-        /* General Reset */
+the        /* General Reset */
         body,
         h1,
         h2,
@@ -461,6 +461,20 @@
             .menu-catagories{
                 margin: 5px 0;
             }
+                .gallery-images img {
+            
+            width: 250px;
+            
+                }
+                .menu-item {
+                        width: 150px;
+                }
+                .facility img {
+            
+            
+            width: 200px;
+            
+                }
         }
           
         @media only screen and (max-width:715px){
