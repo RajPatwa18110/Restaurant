@@ -160,29 +160,29 @@ the        /* General Reset */
         .menu-items .menu-item button{
             max-width: 100%;
             padding: 5px 3%;
-            border-radius: 10px;
-            border: none;
+            
+            border: 1x solid black;
             font-weight: 400;
-            background-image: linear-gradient(to right, rgb(226, 149, 7), rgb(0, 255, 136));
+            
             cursor: pointer;
         }
         .menu-items .menu-item button:hover {
-            background-image: linear-gradient(to right, rgb(85, 240, 180), rgb(255, 123, 0));
+            box-shadow: 1px 1px 2px black;
         }
         .see-more button  {
             max-width: 100%;
             margin-top: 40px;
-            border: none;
+            border: 1px solid black;
             padding: 7px 3%;
-            border-radius: 10px;
+            
             font-size: 1em;
             font-weight: 700;
-            background-image: linear-gradient(to right, rgb(226, 149, 7), rgb(0, 255, 136));
+            
             cursor: pointer;
         }
 
         .see-more button:hover {
-            background-image:  linear-gradient(to right, rgb(85, 240, 180), rgb(255, 123, 0));
+            box-shadow: 1px 1px 2px black;
         }
         /* this is our facilities section */
         .facilities .facility{
